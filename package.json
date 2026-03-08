@@ -9,9 +9,28 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onView:markdown-to-pdf-explorer"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "markdown-to-pdf-explorer",
+          "title": "Markdown to PDF",
+          "icon": "$(output-view-icon)"
+        }
+      ]
+    },
+    "views": {
+      "markdown-to-pdf-explorer": [
+        {
+          "id": "markdown-to-pdf-view",
+          "name": "Markdown to PDF"
+        }
+      ]
+    },
     "commands": [
       {
         "command": "markdown-to-pdf.helloWorld",

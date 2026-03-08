@@ -4,6 +4,15 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
+			"type": "npm",
+			"script": "compile",
+			"group": "build",
+			"label": "npm: compile",
+			"presentation": {
+				"reveal": "silent"
+			}
+		},
+		{
             "label": "watch",
             "dependsOn": [
                 "npm: watch:tsc",
